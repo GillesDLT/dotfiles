@@ -1,0 +1,52 @@
+* {
+    /* COLORS */
+    txtColor: rgb(169, 177, 214);           /* texte color */
+    backgroundColor: rgb(26, 27, 38);       /* background color */
+    borderColor: rgb(36, 40, 59);           /* border color */
+    selectedColor: rgb(115, 218, 202);      /* selected color */
+    listBorderColor: rgb(65, 72, 104);      /* list border color */
+
+    text-color: @txtColor;
+    background-color: @backgroundColor;     /* generic background color */
+    font: "JetBrainsMono Nerd Font 13";     /* size texte */
+}
+
+window {
+    width: 200px;
+    height: 144px;
+    border-color: @borderColor;
+    border: 3px;
+    border-radius: 5;
+    padding: 0.3em;
+    spacing: 0.2em;
+    children: [ listview ];
+}
+
+listview {
+    border-color: @listBorderColor;
+    border: 2px;
+    border-radius: 5;
+    expand: true;
+    background-color: inherit;
+}
+
+element {
+    background-color: transparent;
+    padding: 2px 6px;
+    text-color: @txtColor;
+}
+
+element.selected.normal {
+    text-color: @selectedColor;
+    border-color: @selectedColor;
+    border: 2px;
+    border-radius: 5;
+}
+
+element.selected.active {
+    padding: 1px;
+    border-color: @selectedColor;
+    border: 2px;
+    border-radius: 5;
+    text-color: @selectedColor;
+}

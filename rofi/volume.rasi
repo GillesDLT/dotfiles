@@ -1,0 +1,26 @@
+* {
+background-color: transparent;
+text-color: rgba(123, 123, 142, 1);
+font: "SF Pro Text 14";
+}
+
+window {
+    padding: -0.6em 0.5em 0.2em 0.5em; /* haut droite bas gauche */
+    width: 320px;
+    height: 60px;
+    location: northeast;
+    anchor: northeast;
+    border: 4px;
+    border-color: rgb(123, 123, 142);
+    border-radius: 20px;
+    background-color: rgba(0, 20, 35, 0.6);
+}
+
+entry {
+    enabled: false;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-color: transparent;
+    cursor: default;
+}

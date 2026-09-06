@@ -1,0 +1,68 @@
+* {
+    /* COLORS */
+    txtColor: rgb(169, 177, 214);           /* texte color */
+    backgroundColor: rgb(26, 27, 38);       /* background color */
+    borderColor: rgb(36, 40, 59);           /* border color */
+    entryBorderColor: rgb(180, 190, 254);   /* input border color */
+    entryTxtColor: rgb(122, 162, 247);      /* input texte color */
+    selectedColor: rgb(115, 218, 202);      /* selected color */
+    listBorderColor: rgb(65, 72, 104);      /* list border color */
+
+    text-color: @txtColor;                  /* generic text color */
+    background-color: @backgroundColor;     /* generic background color */
+}
+
+element {
+    border-color: transparent;
+    padding: 2px 6px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: @txtColor;
+}
+
+element.normal.active {
+    padding: 1px;
+    border-color: @entryTxtColor;
+    border: 2px;
+    border-radius: 5;
+    text-color: @entryTxtColor;
+}
+
+window {
+    location: northeast;     /* Position in the top-right corner */
+    anchor: northeast;       /* Ensures the window grows from that corner */
+    width: 335px;
+    /*height: 900px;*/
+    border-color: @borderColor; /* border ext */
+    border: 3px;
+    border-radius: 5;
+    padding: 0.6em;
+    spacing: 0.4em;
+    children: [ listview ];
+}
+
+listview {
+    border-color: @listBorderColor;  /* border int */
+    border: 2px;
+    border-radius: 5;
+    expand: true;
+}
+
+element.selected.normal {
+    padding: 1px;
+    border-color: @selectedColor;
+    border: 2px;
+    border-radius: 5;
+    text-color: @selectedColor;
+}
+
+element.selected.active {
+    padding: 1px;
+    border-color: @selectedColor;
+    border: 2px;
+    border-radius: 5;
+    text-color: @selectedColor;
+}

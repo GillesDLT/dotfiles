@@ -1,0 +1,10 @@
+background  #1a1b26 /* dark */
+texte       #a9b1d6 /* light */
+
+border ext  #24283b /* darker gray */
+border int  #414868 /* lighter gray */
+active      #7dcfff /* blue */
+input       #7aa2f7 /* blue */
+selection   #73daca /* green */
+error       #f7768e /* red */
+warning     #e0af68 /* orange */
